@@ -20,3 +20,4 @@ def lambda_handler(event, context):
     )
 
     print("New instance created:", instance[0].id)
+    
