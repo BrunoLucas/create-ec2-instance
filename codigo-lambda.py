@@ -8,6 +8,7 @@ SUBNET_ID = os.environ['SUBNET_ID']
 
 ec2 = boto3.resource('ec2')
 
+
 def lambda_handler(event, context):
 
     instance = ec2.create_instances(
@@ -20,4 +21,4 @@ def lambda_handler(event, context):
     )
 
     print("New instance created:", instance[0].id)
-    
+
